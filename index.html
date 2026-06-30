@@ -129,7 +129,7 @@ transform:scale(1.05);
 <nav>
 <a href="#parcours">Parcours</a>
 <a href="#competences">Compétences</a>
-<a href="#stages">Stages</a>
+<a href="#stages">Projet technique</a>
 <a href="#projets">Projets</a>
 <a href="#documents">Documents</a>
 <a href="#conclusion">Conclusion</a>
@@ -164,54 +164,30 @@ transform:scale(1.05);
 </div>
 </section>
 
-<section id="stages">
-<h2>Stages / Entreprise</h2>
-<div class="card">
-<h3>Détails sur l'entreprise</h3>
-<h4>IDENTIFICATION</h4>
+<h2 id="stages">Projet technique : Infrastructure réseau virtualisée</h2>
+
+<h3>Contexte du projet</h3>
+<p>Dans le cadre d'un TP noté en BTS SIO, j'ai conçu et déployé une infrastructure réseau fonctionnelle entièrement virtualisée sous VMware (ESXi/Workstation), reproduisant les conditions d'un environnement professionnel d'administration systèmes et réseaux.</p>
+
+<h3>Mes missions et tâches</h3>
 <ul>
-<li>Dénomination :</li>
-<li>Adresse :</li>
-<li>Forme juridique :</li>
-<li>Taille :</li>
-<li>Effectif :</li>
-<li>Secteur d'activité :</li>
+  <li>Installation et configuration d'un serveur Windows Server avec le rôle Active Directory pour la gestion centralisée des utilisateurs et des groupes.</li>
+  <li>Déploiement et paramétrage des services DNS et DHCP pour automatiser l'attribution d'adresses IP et assurer la résolution de noms sur le réseau.</li>
+  <li>Configuration des machines virtuelles clientes pour qu'elles rejoignent le domaine Active Directory.</li>
+  <li>Tests de validation de l'infrastructure (authentification, attribution DHCP, résolution DNS).</li>
 </ul>
-<h4>HISTORIQUE</h4>
-<p>Présentez l'histoire de l'entreprise.</p>
-<h4>RGPD</h4>
-<p>Expliquez comment l'entreprise applique la protection des données.</p>
-<h4>ORIENTATIONS STRATÉGIQUES</h4>
-<p>Décrivez les objectifs et stratégies de l'entreprise.</p>
-<h4>RSE</h4>
-<p>Actions environnementales, sociales ou éthiques mises en place.</p>
-<h4>SWOT</h4>
+
+<h3>Difficultés rencontrées</h3>
+<p>La principale difficulté a été de centraliser et de relier l'ensemble des services (annuaire, DNS, DHCP, postes clients) sur une seule machine serveur, en veillant à ce que chaque composant communique correctement avec les autres sans conflit de configuration. Cela m'a demandé de bien comprendre l'ordre d'installation des rôles et les dépendances entre services pour que l'infrastructure fonctionne de manière cohérente et stable.</p>
+
+<h3>Compétences apprises</h3>
 <ul>
-<li>Forces :</li>
-<li>Faiblesses :</li>
-<li>Opportunités :</li>
-<li>Menaces :</li>
+  <li>Configuration d'un environnement Active Directory et gestion des services DNS/DHCP sous Windows Server.</li>
+  <li>Virtualisation d'une infrastructure réseau avec VMware, diagnostic et résolution de problèmes réseau.</li>
 </ul>
-</div>
-<div class="card">
-<h3>Missions techniques réalisées</h3>
-<h4>Mes missions et tâches</h4>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-<h4>Difficultés rencontrées</h4>
-<p></p>
-<h4>Compétences apprises</h4>
-<ul>
-<li></li>
-<li></li>
-</ul>
-<h4>Conclusion du stage</h4>
-<p></p>
-</div>
-</section>
+
+<h3>Conclusion du projet</h3>
+<p>Ce projet m'a permis de mettre en pratique mes compétences en administration systèmes et réseaux dans un environnement proche de la réalité professionnelle, et de mieux comprendre l'articulation entre les différents services d'infrastructure (annuaire, DNS, DHCP). Le détail complet du projet (documentation, rapport, vidéo de démonstration) est disponible sur mon <a href="https://github.com/diegoakb-web/infra-reseau-virtualisee">repository GitHub</a>.</p> 
 
 <section id="projets">
 
