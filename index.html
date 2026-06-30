@@ -64,12 +64,6 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
-.project{
-  background:#fafafa;
-  padding:20px;
-  border-radius:8px;
-  border:1px solid #e5e5e5;
-}
 ul{
   padding-left:20px;
 }
@@ -164,82 +158,70 @@ transform:scale(1.05);
 </div>
 </section>
 
-<h2 id="stages">Projet technique : Infrastructure réseau virtualisée</h2>
+<section id="stages" class="projet-detail">
+  <div class="projet-detail-container">
 
-<h3>Contexte du projet</h3>
-<p>Dans le cadre d'un TP noté en BTS SIO, j'ai conçu et déployé une infrastructure réseau fonctionnelle entièrement virtualisée sous VMware (ESXi/Workstation), reproduisant les conditions d'un environnement professionnel d'administration systèmes et réseaux.</p>
+    <h2>Projet technique : Infrastructure réseau virtualisée</h2>
 
-<h3>Mes missions et tâches</h3>
-<ul>
-  <li>Installation et configuration d'un serveur Windows Server avec le rôle Active Directory pour la gestion centralisée des utilisateurs et des groupes.</li>
-  <li>Déploiement et paramétrage des services DNS et DHCP pour automatiser l'attribution d'adresses IP et assurer la résolution de noms sur le réseau.</li>
-  <li>Configuration des machines virtuelles clientes pour qu'elles rejoignent le domaine Active Directory.</li>
-  <li>Tests de validation de l'infrastructure (authentification, attribution DHCP, résolution DNS).</li>
-</ul>
+    <h3>Contexte du projet</h3>
+    <p>Dans le cadre d'un TP noté en BTS SIO, j'ai conçu et déployé une infrastructure réseau fonctionnelle entièrement virtualisée sous VMware (ESXi/Workstation), reproduisant les conditions d'un environnement professionnel d'administration systèmes et réseaux.</p>
 
-<h3>Difficultés rencontrées</h3>
-<p>La principale difficulté a été de centraliser et de relier l'ensemble des services (annuaire, DNS, DHCP, postes clients) sur une seule machine serveur, en veillant à ce que chaque composant communique correctement avec les autres sans conflit de configuration. Cela m'a demandé de bien comprendre l'ordre d'installation des rôles et les dépendances entre services pour que l'infrastructure fonctionne de manière cohérente et stable.</p>
+    <h3>Mes missions et tâches</h3>
+    <ul>
+      <li>Installation et configuration d'un serveur Windows Server avec le rôle Active Directory pour la gestion centralisée des utilisateurs et des groupes.</li>
+      <li>Déploiement et paramétrage des services DNS et DHCP pour automatiser l'attribution d'adresses IP et assurer la résolution de noms sur le réseau.</li>
+      <li>Configuration des machines virtuelles clientes pour qu'elles rejoignent le domaine Active Directory.</li>
+      <li>Tests de validation de l'infrastructure (authentification, attribution DHCP, résolution DNS).</li>
+    </ul>
 
-<h3>Compétences apprises</h3>
-<ul>
-  <li>Configuration d'un environnement Active Directory et gestion des services DNS/DHCP sous Windows Server.</li>
-  <li>Virtualisation d'une infrastructure réseau avec VMware, diagnostic et résolution de problèmes réseau.</li>
-</ul>
+    <h3>Difficultés rencontrées</h3>
+    <p>La principale difficulté a été de centraliser et de relier l'ensemble des services (annuaire, DNS, DHCP, postes clients) sur une seule machine serveur, en veillant à ce que chaque composant communique correctement avec les autres sans conflit de configuration. Cela m'a demandé de bien comprendre l'ordre d'installation des rôles et les dépendances entre services pour que l'infrastructure fonctionne de manière cohérente et stable.</p>
 
-<h3>Conclusion du projet</h3>
-<p>Ce projet m'a permis de mettre en pratique mes compétences en administration systèmes et réseaux dans un environnement proche de la réalité professionnelle, et de mieux comprendre l'articulation entre les différents services d'infrastructure (annuaire, DNS, DHCP). Le détail complet du projet (documentation, rapport, vidéo de démonstration) est disponible sur mon <a href="https://github.com/diegoakb-web/infra-reseau-virtualise">repository GitHub</a>.</p> 
+    <h3>Compétences apprises</h3>
+    <ul>
+      <li>Configuration d'un environnement Active Directory et gestion des services DNS/DHCP sous Windows Server.</li>
+      <li>Virtualisation d'une infrastructure réseau avec VMware, diagnostic et résolution de problèmes réseau.</li>
+    </ul>
+
+    <h3>Conclusion du projet</h3>
+    <p>Ce projet m'a permis de mettre en pratique mes compétences en administration systèmes et réseaux dans un environnement proche de la réalité professionnelle, et de mieux comprendre l'articulation entre les différents services d'infrastructure (annuaire, DNS, DHCP). Le détail complet du projet (documentation, rapport, vidéo de démonstration) est disponible sur mon <a href="https://github.com/diegoakb-web/infra-reseau-virtualise">repository GitHub</a>.</p>
+
+  </div>
+</section>
 
 <section id="projets">
+  <h2>Projets</h2>
+  <div class="grid">
 
-<h2>Projets techniques</h2>
+    <!-- Projet 1 -->
+    <a href="support.html" class="project">
+      <img src="images/support.jpg" alt="Support informatique">
+      <h3>Support et Maintenance SI</h3>
+      <p>Diagnostic et résolution d'incidents informatiques.</p>
+    </a>
 
-<div class="grid">
+    <!-- Projet 2 -->
+    <a href="stage.html" class="project">
+      <img src="images/stage.jpg" alt="Projet de stage">
+      <h3>Stage professionnel</h3>
+      <p>Projet réalisé durant mon stage en entreprise.</p>
+    </a>
 
-<!-- Projet 1 -->
-<a href="support.html" class="project">
+    <!-- Projet 3 -->
+    <a href="reseau.html" class="project">
+      <img src="images/reseau.jpg" alt="Infrastructure réseau">
+      <h3>Infrastructure réseau</h3>
+      <p>Conception et déploiement d'une infrastructure réseau virtualisée.</p>
+    </a>
 
-<img src="images/support.jpg" alt="Support informatique">
+    <!-- Projet 4 -->
+    <a href="database.html" class="project">
+      <img src="images/database.jpg" alt="Base de données">
+      <h3>Base de données</h3>
+      <p>Conception et administration d'une base de données.</p>
+    </a>
 
-<h3>Support et Maintenance SI</h3>
-
-<p>Diagnostic et résolution d'incidents informatiques.</p>
-
-</a>
-<!-- Projet 2 -->
-
-<a href="stage.html" class="project">
-
-<img src="images/stage.jpg" alt="Projet de stage">
-
-<h3>Stage professionnel</h3>
-
-<p>Projet réalisé durant mon stage en entreprise.</p>
-
-</a>
-<!-- Projet 3 -->
-
-<a href="reseau.html" class="project">
-
-<img src="images/reseau.jpg" alt="Infrastructure réseau">
-
-<h3>Support et Maintenance SI</h3>
-
-<p>Diagnostic et résolution d'incidents informatiques.</p>
-
-</a>
-<!-- Projet 4 -->
-
-<a href="database.html" class="project">
-
-<img src="images/database.jpg" alt="Base de données">
-
-<h3>Base de données</h3>
-
-<p>Conception et administration d'une base de données.</p>
-
-</a>
-</div>
-
+  </div>
 </section>
 
 <section id="documents">
