@@ -6,65 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infrastructure réseau virtualisée</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: white;
-      color: black;
-      line-height: 1.6;
-    }
-    header {
-      background: #f2f2f2;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: white; color: black; line-height: 1.6; }
+    header { background: #f2f2f2; padding: 40px 20px; text-align: center; border-bottom: 1px solid #ddd; }
     header h1 { margin: 0; font-size: 32px; }
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-    }
-    nav a {
-      color: black;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; }
+    nav a { color: black; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     section { padding: 60px 10%; }
-    h2 { color: black; margin-bottom: 20px; }
-    h3 i { margin-right: 8px; color: #2563eb; }
-    .card {
-      background: #fafafa;
-      padding: 30px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      border: 1px solid #e5e5e5;
-    }
-    ul { padding-left: 20px; }
-    .download {
-      display: inline-block;
-      background: black;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      margin-top: 10px;
-    }
+    .card { background: #fafafa; padding: 30px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #e5e5e5; }
+    .download { display: inline-block; background: black; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 10px; margin-top: 10px; }
     .download:hover { opacity: 0.8; }
-    footer {
-      background: #f2f2f2;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid #ddd;
-    }
+    footer { background: #f2f2f2; text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #ddd; }
+    #contenu-projet h1, #contenu-projet h2, #contenu-projet h3 { color: black; }
+    #contenu-projet ul { padding-left: 20px; }
   </style>
 </head>
 <body>
@@ -79,48 +33,17 @@
 </nav>
 
 <section>
-  <div class="card">
-    <h2><i class="fa-solid fa-circle-info"></i> Contexte du projet</h2>
-    <p>Dans le cadre d'un TP noté en BTS SIO, j'ai conçu et déployé une infrastructure réseau fonctionnelle entièrement virtualisée sous VMware (ESXi/Workstation), reproduisant les conditions d'un environnement professionnel d'administration systèmes et réseaux.</p>
+  <div class="card" id="contenu-projet">
+    <p>Chargement du projet...</p>
   </div>
 
   <div class="card">
-    <h2><i class="fa-solid fa-list-check"></i> Mes missions et tâches</h2>
-    <ul>
-      <li>Installation et configuration d'un serveur Windows Server avec le rôle Active Directory pour la gestion centralisée des utilisateurs et des groupes.</li>
-      <li>Déploiement et paramétrage des services DNS et DHCP pour automatiser l'attribution d'adresses IP et assurer la résolution de noms sur le réseau.</li>
-      <li>Configuration des machines virtuelles clientes pour qu'elles rejoignent le domaine Active Directory.</li>
-      <li>Tests de validation de l'infrastructure (authentification, attribution DHCP, résolution DNS).</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2><i class="fa-solid fa-triangle-exclamation"></i> Difficultés rencontrées</h2>
-    <p>La principale difficulté a été de centraliser et de relier l'ensemble des services (annuaire, DNS, DHCP, postes clients) sur une seule machine serveur, en veillant à ce que chaque composant communique correctement avec les autres sans conflit de configuration. Cela m'a demandé de bien comprendre l'ordre d'installation des rôles et les dépendances entre services pour que l'infrastructure fonctionne de manière cohérente et stable.</p>
-  </div>
-
-  <div class="card">
-    <h2><i class="fa-solid fa-graduation-cap"></i> Compétences apprises</h2>
-    <ul>
-      <li>Configuration d'un environnement Active Directory et gestion des services DNS/DHCP sous Windows Server.</li>
-      <li>Virtualisation d'une infrastructure réseau avec VMware, diagnostic et résolution de problèmes réseau.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2><i class="fa-solid fa-file-arrow-down"></i> Documents du projet</h2>
-    <p>Tous les documents sont disponibles sur le repository GitHub du projet.</p>
-    <a class="download" href="https://github.com/diegoakb-web/infra-reseau-virtualisee/raw/main/Cahier_des_charges_MARTINS_CIE.pdf" target="_blank">
+    <h2><i class="fa-solid fa-file-arrow-down"></i> Documents</h2>
+    <a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Cahier_des_charges_MARTINS_CIE.pdf" download target="_blank">
       <i class="fa-solid fa-file-pdf"></i> Cahier des charges
     </a>
-    <a class="download" href="https://github.com/diegoakb-web/infra-reseau-virtualisee/raw/main/Rapport%20de%20projet.docx" target="_blank">
+    <a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Rapport%20de%20projet.docx" download target="_blank">
       <i class="fa-solid fa-file-word"></i> Rapport de projet
-    </a>
-    <a class="download" href="https://github.com/diegoakb-web/infra-reseau-virtualisee/raw/main/Documentation.pdf" target="_blank">
-      <i class="fa-solid fa-file-pdf"></i> Documentation technique
-    </a>
-    <a class="download" href="https://www.youtube.com/watch?v=Hnd-Le4G3Pk" target="_blank">
-      <i class="fa-brands fa-youtube"></i> Vidéo de démonstration
     </a>
   </div>
 </section>
@@ -137,9 +60,17 @@
   </p>
 </footer>
 
-</body>
-</html>
-<a href="index.html">⬅ Retour au portfolio</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+<script>
+  fetch('https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/projet.md')
+    .then(response => response.text())
+    .then(text => {
+      document.getElementById('contenu-projet').innerHTML = marked.parse(text);
+    })
+    .catch(() => {
+      document.getElementById('contenu-projet').innerHTML = '<p>Impossible de charger le contenu du projet.</p>';
+    });
+</script>
 
 </body>
 </html>
