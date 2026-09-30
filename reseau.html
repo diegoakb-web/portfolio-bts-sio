@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infrastructure réseau virtualisée</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: white; color: black; line-height: 1.6; }
-    header { background: #f2f2f2; padding: 40px 20px; text-align: center; border-bottom: 1px solid #ddd; }
-    header h1 { margin: 0; font-size: 32px; }
-    nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; }
-    nav a { color: black; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 60px 10%; }
-    .card { background: #fafafa; padding: 30px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #e5e5e5; }
-    .download { display: inline-block; background: black; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 10px; margin-top: 10px; }
-    .download:hover { opacity: 0.8; }
-    footer { background: #f2f2f2; text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #ddd; }
-    #contenu-projet h1, #contenu-projet h2, #contenu-projet h3 { color: black; }
-    #contenu-projet ul { padding-left: 20px; }
-  </style>
+<meta charset="UTF-8">
+<title>Infrastructure réseau virtualisée</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:40px;
+}
+
+img{
+width:500px;
+}
+
+table{
+border-collapse:collapse;
+width:100%;
+margin:20px 0;
+}
+
+table th, table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:left;
+}
+
+table th{
+background:#f2f2f2;
+}
+
+.download{
+display:inline-block;
+background:black;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+margin-right:10px;
+margin-top:10px;
+}
+
+.download:hover{
+opacity:0.8;
+}
+
+</style>
+
 </head>
+
 <body>
 
-<header>
-  <h1><i class="fa-solid fa-network-wired"></i> Infrastructure réseau virtualisée</h1>
-  <p>Projet technique – BTS SIO Option SISR</p>
-</header>
+<h1>Infrastructure réseau virtualisée — Active Directory, DNS, DHCP</h1>
+<p>Projet réalisé dans le cadre d'un TP noté en BTS SIO, option SISR.</p>
 
-<nav>
-  <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Retour au portfolio</a>
-</nav>
+<h2>Contexte</h2>
+<p>Ce projet consiste à concevoir et déployer une infrastructure réseau fonctionnelle, entièrement virtualisée sous VMware (ESXi / Workstation), reproduisant les conditions d'un environnement professionnel d'administration systèmes et réseaux.</p>
 
-<section>
-  <div class="card" id="contenu-projet">
-    <p>Chargement du projet...</p>
-  </div>
+<h2>Objectifs</h2>
+<ul>
+  <li>Centraliser la gestion des utilisateurs et des ressources via un service d'annuaire.</li>
+  <li>Automatiser l'attribution d'adresses IP sur le réseau.</li>
+  <li>Mettre en place une résolution de noms fiable entre les machines.</li>
+  <li>Intégrer des postes clients à un domaine géré de façon centralisée.</li>
+</ul>
 
-  <div class="card">
-    <h2><i class="fa-solid fa-file-arrow-down"></i> Documents</h2>
-    <a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Cahier_des_charges_MARTINS_CIE.pdf" download target="_blank">
-      <i class="fa-solid fa-file-pdf"></i> Cahier des charges
-    </a>
-    <a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Rapport%20de%20projet.docx" download target="_blank">
-      <i class="fa-solid fa-file-word"></i> Rapport de projet
-    </a>
-  </div>
-</section>
+<h2>Environnement technique</h2>
+<table>
+  <tr><th>Élément</th><th>Détail</th></tr>
+  <tr><td>Hyperviseur</td><td>VMware ESXi / Workstation</td></tr>
+  <tr><td>Système serveur</td><td>Windows Server</td></tr>
+  <tr><td>Services déployés</td><td>Active Directory, DNS, DHCP</td></tr>
+  <tr><td>Postes clients</td><td>Machines virtuelles jointes au domaine</td></tr>
+</table>
 
-<footer>
-  <p>Portfolio BTS SIO – 2026</p>
-  <p>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kubotadiego@gmail.com" target="_blank" style="color:black; margin:0 10px;">
-      <i class="fa-solid fa-envelope"></i> Email
-    </a>
-    <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank" style="color:black; margin:0 10px;">
-      <i class="fa-brands fa-linkedin"></i> LinkedIn
-    </a>
-  </p>
-</footer>
+<h2>Mise en œuvre</h2>
+<ol>
+  <li>Installation et configuration du serveur Windows Server.</li>
+  <li>Déploiement du rôle Active Directory Domain Services et création du domaine.</li>
+  <li>Configuration du service DNS pour la résolution de noms interne.</li>
+  <li>Configuration du service DHCP pour l'attribution automatique des adresses IP.</li>
+  <li>Jonction des machines virtuelles clientes au domaine Active Directory.</li>
+  <li>Tests de validation : authentification des utilisateurs, attribution DHCP, résolution DNS.</li>
+</ol>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
-<script>
-  fetch('https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/projet.md')
-    .then(response => response.text())
-    .then(text => {
-      document.getElementById('contenu-projet').innerHTML = marked.parse(text);
-    })
-    .catch(() => {
-      document.getElementById('contenu-projet').innerHTML = '<p>Impossible de charger le contenu du projet.</p>';
-    });
-</script>
+<h2>Difficultés rencontrées</h2>
+<p>La principale difficulté a été de centraliser et de relier l'ensemble des services (annuaire, DNS, DHCP, postes clients) sur une seule machine serveur, en veillant à ce que chaque composant communique correctement avec les autres sans conflit de configuration. Cela a nécessité de bien comprendre l'ordre d'installation des rôles et les dépendances entre services pour obtenir une infrastructure cohérente et stable.</p>
+
+<h2>Compétences mobilisées</h2>
+<ul>
+  <li>Virtualisation d'infrastructure (VMware)</li>
+  <li>Administration Windows Server</li>
+  <li>Configuration et gestion d'Active Directory</li>
+  <li>Configuration des services DNS et DHCP</li>
+  <li>Diagnostic et résolution de problèmes réseau</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Ce projet a permis de mettre en pratique des compétences d'administration systèmes et réseaux dans un environnement proche de la réalité professionnelle, et de mieux comprendre l'articulation entre les différents services d'une infrastructure (annuaire, DNS, DHCP).</p>
+
+<h2>Documents</h2>
+<a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Cahier_des_charges_MARTINS_CIE.pdf" download>📄 Cahier des charges</a>
+<a class="download" href="https://raw.githubusercontent.com/diegoakb-web/infra-reseau-virtualisee/main/Rapport%20de%20projet.docx" download>📄 Rapport de projet</a>
+<a class="download" href="https://www.youtube.com/watch?v=Hnd-Le4G3Pk" target="_blank">🎥 Vidéo de démonstration</a>
+
+<br><br>
+<a href="index.html">⬅ Retour au portfolio</a>
 
 </body>
+
 </html>
