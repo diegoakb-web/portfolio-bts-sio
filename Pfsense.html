@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pare-feu pfSense — Kubota Diego</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project-detail { max-width: 800px; }
+    .project-detail h3 { font-family:'Poppins',sans-serif; font-size:18px; font-weight:600; margin:32px 0 12px; color:#1A1A2E; }
+    .project-detail p { font-size:15px; color:#555; line-height:1.8; margin-bottom:12px; }
+    .project-detail ul { padding-left:20px; margin-bottom:16px; }
+    .project-detail li { font-size:14px; color:#555; line-height:1.9; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+    .back-link { display:inline-flex; align-items:center; gap:8px; color:#888; text-decoration:none; font-size:14px; margin-bottom:32px; }
+    .back-link:hover { color:#E94560; }
+    .project-hero { background:linear-gradient(135deg,#1A1A2E,#0F3460); border-radius:16px; height:160px; display:flex; align-items:center; justify-content:center; font-size:64px; color:#E94560; margin-bottom:32px; }
+  </style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="avatar">DK</div>
+    <h2 class="sidebar-name">Kubota Diego</h2>
+    <p class="sidebar-title">BTS SIO — SISR</p>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="index.html#about" class="nav-link"><i class="fa-solid fa-user"></i> À propos</a>
+    <a href="index.html#parcours" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="index.html#projets" class="nav-link active"><i class="fa-solid fa-folder-open"></i> Projets</a>
+    <a href="veille.html" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i> Veille</a>
+    <a href="e5.html" class="nav-link"><i class="fa-solid fa-file-shield"></i> E5</a>
+    <a href="e6.html" class="nav-link"><i class="fa-solid fa-file-code"></i> E6</a>
+    <a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+  <div class="sidebar-socials">
+    <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/diegoakb-web" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:kubotadiego@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</aside>
+<main class="main">
+  <section class="section">
+    <a href="index.html#projets" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</a>
+    <div class="project-detail">
+      <div class="project-hero"><i class="fa-solid fa-shield-halved"></i></div>
+      <h2 class="section-title">Mise en place d'un pare-feu pfSense</h2>
+      <div class="tags">
+        <span class="project-tag">pfSense</span>
+        <span class="project-tag">Firewall</span>
+        <span class="project-tag">VMware</span>
+        <span class="project-tag">Sécurité réseau</span>
+        <span class="project-tag">NAT</span>
+      </div>
+
+      <div class="project-detail">
+        <h3><i class="fa-solid fa-circle-info" style="color:#E94560;margin-right:8px;"></i>Contexte</h3>
+        <p>Dans le cadre d'un TP en BTS SIO, j'ai déployé et configuré un pare-feu pfSense en machine virtuelle sous VMware afin de sécuriser un réseau local et contrôler les flux entrants et sortants.</p>
+
+        <h3><i class="fa-solid fa-list-check" style="color:#E94560;margin-right:8px;"></i>Missions réalisées</h3>
+        <ul>
+          <li>Installation de pfSense sur une machine virtuelle VMware avec deux interfaces réseau (WAN/LAN).</li>
+          <li>Configuration des règles de filtrage pour autoriser ou bloquer les flux selon les besoins.</li>
+          <li>Mise en place du NAT pour permettre l'accès à Internet depuis le réseau local.</li>
+          <li>Configuration d'un portail captif pour authentifier les utilisateurs avant l'accès au réseau.</li>
+          <li>Tests de validation : vérification des règles de filtrage et des logs de connexion.</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-triangle-exclamation" style="color:#E94560;margin-right:8px;"></i>Difficultés rencontrées</h3>
+        <p>La principale difficulté a été de définir les règles de filtrage dans le bon ordre, pfSense appliquant les règles de manière séquentielle. Une mauvaise priorité entre les règles entraînait des blocages inattendus sur certains services.</p>
+
+        <h3><i class="fa-solid fa-graduation-cap" style="color:#E94560;margin-right:8px;"></i>Compétences mobilisées</h3>
+        <ul>
+          <li>Configuration et administration d'un pare-feu open source (pfSense)</li>
+          <li>Maîtrise des règles de filtrage réseau et du NAT</li>
+          <li>Virtualisation sous VMware</li>
+          <li>Sécurisation d'une infrastructure réseau</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-flag-checkered" style="color:#E94560;margin-right:8px;"></i>Conclusion</h3>
+        <p>Ce projet m'a permis de comprendre les mécanismes de filtrage réseau et l'importance d'une politique de sécurité bien définie. pfSense est un outil puissant et flexible, largement utilisé en entreprise pour sécuriser les périmètres réseau.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
