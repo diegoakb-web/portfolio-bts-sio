@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épreuve E6 — Kubota Diego</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .situation { background:white; border:1px solid #eee; border-radius:14px; padding:28px; margin-bottom:24px; }
+    .situation-header { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+    .situation-num { width:40px; height:40px; border-radius:10px; background:#0F3460; color:white; font-family:'Poppins',sans-serif; font-weight:700; font-size:16px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .situation-header h3 { font-family:'Poppins',sans-serif; font-size:17px; font-weight:600; margin-bottom:4px; }
+    .situation-header p { font-size:13px; color:#888; }
+    .situation p { font-size:14px; color:#555; line-height:1.8; margin-bottom:12px; }
+    .situation ul { padding-left:20px; margin-bottom:16px; }
+    .situation li { font-size:14px; color:#555; line-height:1.9; }
+    .competences-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:8px; margin:12px 0; }
+    .competence-tag { background:rgba(15,52,96,0.08); color:#0F3460; font-size:12px; font-weight:500; padding:6px 12px; border-radius:6px; text-align:center; }
+    .epreuve-intro { font-size:15px; color:#555; line-height:1.8; margin-bottom:40px; max-width:700px; }
+  </style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="avatar">DK</div>
+    <h2 class="sidebar-name">Kubota Diego</h2>
+    <p class="sidebar-title">BTS SIO — SISR</p>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="index.html#about" class="nav-link"><i class="fa-solid fa-user"></i> À propos</a>
+    <a href="index.html#parcours" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="index.html#projets" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projets</a>
+    <a href="veille.html" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i> Veille</a>
+    <a href="e5.html" class="nav-link"><i class="fa-solid fa-file-shield"></i> E5</a>
+    <a href="e6.html" class="nav-link active"><i class="fa-solid fa-file-code"></i> E6</a>
+    <a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+  <div class="sidebar-socials">
+    <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/diegoakb-web" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:kubotadiego@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</aside>
+<main class="main">
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title"><i class="fa-solid fa-file-code" style="color:#0F3460;margin-right:12px;"></i>Épreuve E6</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="epreuve-intro">L'épreuve E6 porte sur le support et la mise à disposition de services informatiques aux utilisateurs. Elle regroupe mes situations professionnelles significatives liées à l'assistance, la maintenance et le déploiement de services.</p>
+
+    <div class="situation">
+      <div class="situation-header">
+        <div class="situation-num">1</div>
+        <div>
+          <h3>Stage — SAM Networks Solutions, Paris</h3>
+          <p>2025 — Stage de 8 semaines</p>
+        </div>
+      </div>
+      <p>Durant mon stage chez SAM Networks Solutions, j'ai participé à des missions d'administration systèmes et réseaux en environnement professionnel : maintenance des équipements, assistance aux utilisateurs, et contribution à des projets d'infrastructure.</p>
+      <div class="competences-grid">
+        <span class="competence-tag">Répondre aux incidents</span>
+        <span class="competence-tag">Mettre à disposition un service</span>
+        <span class="competence-tag">Organiser son développement</span>
+      </div>
+    </div>
+
+    <div class="situation">
+      <div class="situation-header">
+        <div class="situation-num">2</div>
+        <div>
+          <h3>Support et Maintenance SI</h3>
+          <p>BTS SIO — TP support informatique</p>
+        </div>
+      </div>
+      <p>Prise en charge et résolution d'incidents informatiques : diagnostic des pannes matérielles et logicielles, installation et configuration de postes de travail, assistance et accompagnement des utilisateurs.</p>
+      <div class="competences-grid">
+        <span class="competence-tag">Répondre aux incidents</span>
+        <span class="competence-tag">Collecter et orienter les demandes</span>
+      </div>
+      <a class="btn-primary" href="support.html" style="display:inline-flex;margin-top:12px;background:#0F3460;"><i class="fa-solid fa-arrow-right"></i> Voir le projet</a>
+    </div>
+
+    <div class="situation">
+      <div class="situation-header">
+        <div class="situation-num">3</div>
+        <div>
+          <h3>Serveur de fichiers Linux (Samba)</h3>
+          <p>BTS SIO — TP partage réseau</p>
+        </div>
+      </div>
+      <p>Déploiement d'un serveur de fichiers Samba sous Linux, intégré au domaine Active Directory, avec gestion des partages réseau et des droits d'accès par groupe pour les utilisateurs du domaine.</p>
+      <div class="competences-grid">
+        <span class="competence-tag">Mettre à disposition un service</span>
+        <span class="competence-tag">Accompagner les utilisateurs</span>
+      </div>
+      <a class="btn-primary" href="samba.html" style="display:inline-flex;margin-top:12px;background:#0F3460;"><i class="fa-solid fa-arrow-right"></i> Voir le projet</a>
+    </div>
+
+  </section>
+</main>
+</body>
+</html>
