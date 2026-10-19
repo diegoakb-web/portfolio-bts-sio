@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique — Kubota Diego</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .veille-intro { font-size:15px; color:#555; line-height:1.8; margin-bottom:48px; max-width:700px; }
+    .veille-subject { margin-bottom:60px; }
+    .veille-subject-header { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
+    .veille-icon { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:22px; color:white; flex-shrink:0; }
+    .veille-icon.cyber { background:linear-gradient(135deg,#E94560,#c73652); }
+    .veille-icon.wifi { background:linear-gradient(135deg,#0F3460,#1A1A2E); }
+    .veille-subject-title h2 { font-family:'Poppins',sans-serif; font-size:22px; font-weight:600; margin-bottom:4px; }
+    .veille-subject-title p { font-size:13px; color:#888; }
+    .veille-why { background:rgba(233,69,96,0.05); border-left:3px solid #E94560; border-radius:0 8px 8px 0; padding:16px 20px; margin-bottom:28px; font-size:14px; color:#444; line-height:1.7; }
+    .veille-why.wifi-why { background:rgba(15,52,96,0.05); border-left-color:#0F3460; }
+    .articles-list { display:flex; flex-direction:column; gap:16px; }
+    .article-card { background:white; border:1px solid #eee; border-radius:12px; padding:20px 24px; display:flex; gap:20px; align-items:flex-start; }
+    .article-date { font-size:11px; color:#E94560; font-weight:600; white-space:nowrap; background:rgba(233,69,96,0.08); padding:4px 10px; border-radius:20px; }
+    .article-date.wifi-date { color:#0F3460; background:rgba(15,52,96,0.08); }
+    .article-body { flex:1; }
+    .article-body h4 { font-family:'Poppins',sans-serif; font-size:14px; font-weight:600; margin-bottom:6px; color:#1A1A2E; }
+    .article-body p { font-size:13px; color:#666; line-height:1.6; margin-bottom:8px; }
+    .article-source { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:#888; text-decoration:none; }
+    .article-source:hover { color:#E94560; }
+    .retenir { background:white; border:1px solid #eee; border-radius:12px; padding:20px 24px; margin-top:24px; }
+    .retenir h4 { font-family:'Poppins',sans-serif; font-size:14px; font-weight:600; margin-bottom:12px; color:#1A1A2E; }
+    .retenir ul { padding-left:20px; }
+    .retenir li { font-size:13px; color:#555; line-height:1.8; }
+  </style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="avatar">DK</div>
+    <h2 class="sidebar-name">Kubota Diego</h2>
+    <p class="sidebar-title">BTS SIO — SISR</p>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="index.html#about" class="nav-link"><i class="fa-solid fa-user"></i> À propos</a>
+    <a href="index.html#parcours" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="index.html#projets" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projets</a>
+    <a href="veille.html" class="nav-link active"><i class="fa-solid fa-magnifying-glass"></i> Veille</a>
+    <a href="e5.html" class="nav-link"><i class="fa-solid fa-file-shield"></i> E5</a>
+    <a href="e6.html" class="nav-link"><i class="fa-solid fa-file-code"></i> E6</a>
+    <a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+  <div class="sidebar-socials">
+    <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/diegoakb-web" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:kubotadiego@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</aside>
+
+<main class="main">
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Veille technologique</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="veille-intro">Dans le cadre de mon BTS SIO option SISR, j'effectue une veille régulière sur deux sujets directement liés à mon domaine : la cybersécurité des infrastructures réseau et l'évolution des standards Wi-Fi en entreprise.</p>
+
+    <!-- SUJET 1 : CYBERSECURITE -->
+    <div class="veille-subject">
+      <div class="veille-subject-header">
+        <div class="veille-icon cyber"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="veille-subject-title">
+          <h2>Cybersécurité des infrastructures</h2>
+          <p>Menaces, vulnérabilités et bonnes pratiques — focus Active Directory</p>
+        </div>
+      </div>
+
+      <div class="veille-why">
+        <strong>Pourquoi ce sujet ?</strong> En tant qu'étudiant SISR ayant déployé un environnement Active Directory dans le cadre de mon projet de virtualisation, j'ai réalisé que la sécurisation de l'annuaire est un enjeu critique. Active Directory est présent dans la quasi-totalité des entreprises et reste la cible principale des cyberattaques modernes.
+      </div>
+
+      <div class="articles-list">
+
+        <div class="article-card">
+          <span class="article-date">Juillet 2026</span>
+          <div class="article-body">
+            <h4>Active Directory en 2026 : pourquoi le mot de passe reste la première faille</h4>
+            <p>Malgré les outils modernes comme les EDR et SIEM, la compromission d'un simple identifiant suffit à compromettre toute une infrastructure Active Directory. Les outils natifs d'AD ne permettent pas de contextualiser un mot de passe, laissant une faille béante dans la sécurité des domaines.</p>
+            <a href="https://www.it-connect.fr/active-directory-en-2026-pourquoi-le-mot-de-passe-reste-la-premiere-faille-et-comment-la-combler/" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> it-connect.fr</a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <span class="article-date">Août 2026</span>
+          <div class="article-body">
+            <h4>Faille "BadSuccessor" : une menace critique sur Windows Server 2025</h4>
+            <p>Une vulnérabilité critique affecte les environnements Active Directory basés sur Windows Server 2025. Surnommée "BadSuccessor", elle exploite les comptes dMSA (Delegated Managed Service Account) et permet à un attaquant de prendre le contrôle total d'un domaine. Plus de 9 environnements sur 10 sous Windows Server 2025 seraient concernés.</p>
+            <a href="https://www.it-connect.fr/windows-server-2025-compte-dmsa-cette-faille-critique-menace-lactive-directory" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> it-connect.fr</a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <span class="article-date">2025</span>
+          <div class="article-body">
+            <h4>Les attaques ciblant Active Directory en hausse de 42% en 2025</h4>
+            <p>Selon le rapport CrowdStrike 2025, les attaques visant Active Directory ont augmenté de 42%, avec le Kerberoasting en tête des techniques utilisées. Cette tendance confirme qu'Active Directory reste la cible prioritaire des cybercriminels pour compromettre des infrastructures entières.</p>
+            <a href="https://ayinedjimi-consultants.fr/news/active-directory-attaques-hausse-42" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> ayinedjimi-consultants.fr</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="retenir">
+        <h4><i class="fa-solid fa-lightbulb" style="color:#E94560;margin-right:8px;"></i>Ce que je retiens</h4>
+        <ul>
+          <li>Active Directory est au cœur de l'authentification en entreprise — le compromettre revient à obtenir les clés du système d'information.</li>
+          <li>Les mots de passe faibles ou réutilisés restent la première porte d'entrée des attaquants en 2026.</li>
+          <li>Des techniques comme le Kerberoasting permettent d'extraire des credentials sans déclencher d'alerte sur les outils natifs AD.</li>
+          <li>La gestion des droits et des comptes à privilèges est essentielle pour limiter la surface d'attaque.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SUJET 2 : WIFI -->
+    <div class="veille-subject">
+      <div class="veille-subject-header">
+        <div class="veille-icon wifi"><i class="fa-solid fa-wifi"></i></div>
+        <div class="veille-subject-title">
+          <h2>Wi-Fi 6 et Wi-Fi 7 en entreprise</h2>
+          <p>Évolution des standards sans fil et déploiement professionnel</p>
+        </div>
+      </div>
+
+      <div class="veille-why wifi-why">
+        <strong>Pourquoi ce sujet ?</strong> Les réseaux sans fil sont devenus une composante incontournable des infrastructures d'entreprise. En tant que technicien SISR, comprendre les nouveaux standards Wi-Fi est essentiel pour accompagner les migrations et conseiller sur les architectures réseau modernes.
+      </div>
+
+      <div class="articles-list">
+
+        <div class="article-card">
+          <span class="article-date wifi-date">2026</span>
+          <div class="article-body">
+            <h4>Wi-Fi 6 vs Wi-Fi 6E vs Wi-Fi 7 : quelle norme déployer en 2026 ?</h4>
+            <p>En 2026, le Wi-Fi 6 reste omniprésent (90%+ du parc entreprise), le Wi-Fi 6E est le choix standard pour tout nouveau déploiement, et le Wi-Fi 7 s'impose dans les bâtiments neufs et environnements à très haute densité. Le choix dépend du budget, de la densité d'utilisateurs et de la compatibilité des terminaux.</p>
+            <a href="https://www.optinoc.com/blog/wifi-6-vs-wifi-6e-vs-wifi-7/" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> optinoc.com</a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <span class="article-date wifi-date">2025</span>
+          <div class="article-body">
+            <h4>Wi-Fi 7 : un bond technologique majeur pour les entreprises</h4>
+            <p>Le Wi-Fi 7 introduit des innovations clés : Multi-Link Operation (MLO) permettant d'utiliser plusieurs bandes simultanément, des canaux 320 MHz, et un débit théorique de 46 Gbps. Selon les projections, plus de 17% des points d'accès professionnels seront compatibles Wi-Fi 7 dès 2025, un chiffre appelé à doubler d'ici 2027.</p>
+            <a href="https://www.journaldunet.com/web-tech/1541195-wifi-7-le-socle-technologique-d-un-nouvel-age-de-la-connectivite-d-entreprise/" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> journaldunet.com</a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <span class="article-date wifi-date">Août 2025</span>
+          <div class="article-body">
+            <h4>Le Wi-Fi 7 tire la croissance du marché WLAN entreprise en 2025</h4>
+            <p>Selon Dell'Oro Group, le chiffre d'affaires WLAN entreprise a progressé de 12% en 2025, porté par les déploiements Wi-Fi 7 qui représentent désormais plus d'un tiers des revenus des points d'accès intérieurs. Les analystes prévoient qu'en 2028, le Wi-Fi 7 représentera plus de 90% des revenus de ce marché.</p>
+            <a href="https://www.telecomtv.com/content/access-evolution/wi-fi-7-to-drive-double-digit-enterprise-wlan-growth-in-2025-dell-oro-group-53597/amp/" target="_blank" class="article-source"><i class="fa-solid fa-link"></i> telecomtv.com / Dell'Oro Group</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="retenir">
+        <h4><i class="fa-solid fa-lightbulb" style="color:#0F3460;margin-right:8px;"></i>Ce que je retiens</h4>
+        <ul>
+          <li>Le Wi-Fi 7 (802.11be) apporte la Multi-Link Operation (MLO), permettant d'utiliser plusieurs bandes simultanément pour réduire la latence et augmenter le débit.</li>
+          <li>En 2026, le Wi-Fi 6E reste le meilleur rapport qualité/prix pour un déploiement entreprise classique.</li>
+          <li>Le Wi-Fi 7 est recommandé pour les nouveaux bâtiments et les environnements à très haute densité (amphithéâtres, open spaces denses).</li>
+          <li>La compatibilité des terminaux reste le frein principal à l'adoption massive du Wi-Fi 7 en entreprise.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+</body>
+</html>
