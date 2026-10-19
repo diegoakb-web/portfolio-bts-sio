@@ -1,171 +1,244 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kubota Diego — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio BTS SIO - SISR</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <section id="home" style="text-align:center; padding:80px 10%; background:#f9f9f9; border-bottom:1px solid #ddd;">
-  <h1 style="font-size:48px; margin-bottom:10px;">Kubota Diego</h1>
-  <p style="font-size:20px; color:#555; margin-bottom:30px;">ÉTUDIANT EN BTS SIO — OPTION SISR</p>
-  <p style="font-size:16px; margin-bottom:40px;">Bienvenue sur mon portfolio</p>
-  <a class="download" href="#about">Découvrir mon profil</a>
-  <a class="download" href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank" style="margin-left:10px;">LinkedIn</a>
-  <a class="download" href="#contact" style="margin-left:10px;">Me contacter</a>
-</section>
 
-<nav>
-  <a href="#home">Accueil</a>
-  <a href="#about">À propos</a>
-  <a href="#parcours">Parcours</a>
-  <a href="#projets">Projets</a>
-  <a href="#veille">Veille</a>
-  <a href="E5.html">E5</a>
-  <a href="e6.html">E6</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about" style="padding-top:20px;">
-  <h2>À propos de moi</h2>
-  <div class="card">
-    <h3>Kubota Diego</h3>
-    <p>Étudiant en BTS SIO option SISR, je me spécialise dans les solutions d'infrastructure, systèmes et réseaux. Mon parcours me permet d'acquérir des compétences en administration système, réseaux et sécurité informatique. À travers mes projets académiques, j'allie théorie et pratique pour développer une expertise complète dans le domaine des infrastructures IT.</p>
-    <a class="download" href="CV_Diego_Kubota.pdf" download>Télécharger mon CV</a>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="avatar">DK</div>
+    <h2 class="sidebar-name">Kubota Diego</h2>
+    <p class="sidebar-title">BTS SIO — SISR</p>
   </div>
+  <nav class="sidebar-nav">
+    <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> À propos</a>
+    <a href="#parcours" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="#projets" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projets</a>
+    <a href="#veille" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i> Veille</a>
+    <a href="e5.html" class="nav-link"><i class="fa-solid fa-file-shield"></i> E5</a>
+    <a href="e6.html" class="nav-link"><i class="fa-solid fa-file-code"></i> E6</a>
+    <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+  <div class="sidebar-socials">
+    <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/diegoakb-web" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:kubotadiego@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</aside>
 
-  <div class="card">
-    <h3>Mes compétences</h3>
-    <div class="grid">
-      <div class="card">
-        <h3><i class="fa-solid fa-server"></i> Administration systèmes</h3>
-        <p>Windows Server, Linux, gestion des utilisateurs, Active Directory.</p>
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <!-- ACCUEIL -->
+  <section id="home" class="section hero-section">
+    <div class="hero-content">
+      <span class="hero-tag">Portfolio BTS SIO</span>
+      <h1 class="hero-title">Kubota <span class="accent">Diego</span></h1>
+      <p class="hero-sub">Étudiant en BTS SIO option SISR — spécialisé en administration systèmes, réseaux et virtualisation.</p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn-primary">Voir mes projets</a>
+        <a href="CV_Diego_Kubota.pdf" download class="btn-secondary"><i class="fa-solid fa-download"></i> Mon CV</a>
       </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-network-wired"></i> Réseaux</h3>
-        <p>Configuration réseau, VLAN, DHCP, DNS, routage.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-layer-group"></i> Virtualisation</h3>
-        <p>VMware, VirtualBox, Hyper-V.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-headset"></i> Support informatique</h3>
-        <p>Diagnostic des incidents, assistance utilisateurs, maintenance matérielle et logicielle.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Projet majeur</span></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Compétences clés</span></div>
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">Semaines de stage</span></div>
       </div>
     </div>
-  </div>
-</section>
-  
-  <section id="parcours">
-  <h2>Mon Parcours</h2>
+    <div class="hero-visual">
+      <div class="tech-grid">
+        <div class="tech-item"><i class="fa-solid fa-server"></i><span>Windows Server</span></div>
+        <div class="tech-item"><i class="fa-solid fa-layer-group"></i><span>VMware</span></div>
+        <div class="tech-item"><i class="fa-solid fa-network-wired"></i><span>Active Directory</span></div>
+        <div class="tech-item"><i class="fa-solid fa-shield-halved"></i><span>DNS / DHCP</span></div>
+        <div class="tech-item"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+        <div class="tech-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Formation</h3>
-  <div class="card">
-    <h4>BTS SIO — option SISR</h4>
-    <p>2025 - 2027</p>
-    <p>Formation spécialisée en Solutions d'Infrastructure, Systèmes et Réseaux.</p>
-  </div>
-  <div class="card">
-    <h4>Baccalauréat Général</h4>
-    <p>2022 — Lycée François Villon, Paris 14</p>
-    <p>Baccalauréat général obtenu avant une période d'expérience professionnelle.</p>
-  </div>
+  <!-- À PROPOS -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="section-title">À propos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Étudiant en BTS SIO option SISR, je me spécialise dans les solutions d'infrastructure, systèmes et réseaux. Mon parcours me permet d'acquérir des compétences en administration système, réseaux et sécurité informatique. À travers mes projets académiques, j'allie théorie et pratique pour développer une expertise complète dans le domaine des infrastructures IT.</p>
+        <a class="btn-primary" href="CV_Diego_Kubota.pdf" download><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-solid fa-server skill-icon"></i>
+          <h4>Administration systèmes</h4>
+          <p>Windows Server, Linux, Active Directory</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-network-wired skill-icon"></i>
+          <h4>Réseaux</h4>
+          <p>VLAN, DHCP, DNS, routage</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-layer-group skill-icon"></i>
+          <h4>Virtualisation</h4>
+          <p>VMware, VirtualBox, Hyper-V</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-headset skill-icon"></i>
+          <h4>Support informatique</h4>
+          <p>Diagnostic, assistance, maintenance</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Expérience</h3>
-  <div class="card">
-    <h4>Stagiaire Technicien Réseau</h4>
-    <p>SAM Networks Solutions — Paris</p>
-    <p>Stage de 8 semaines réalisé dans le cadre du BTS SIO. Mise en pratique des compétences en administration systèmes et réseaux en environnement professionnel.</p>
-  </div>
-</section>
-  
-<section id="projets">
-  <h2>Projets</h2>
-  <div class="grid">
+  <!-- PARCOURS -->
+  <section id="parcours" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Parcours</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025 — 2027</span>
+          <h3>BTS SIO — option SISR</h3>
+          <p>Formation spécialisée en Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025 — BTS SIO</span>
+          <h3>Stage — SAM Networks Solutions, Paris</h3>
+          <p>Stage de 8 semaines. Mise en pratique des compétences en administration systèmes et réseaux en environnement professionnel.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022</span>
+          <h3>Baccalauréat Général</h3>
+          <p>Lycée François Villon, Paris 14.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projet 1 -->
-    <a href="support.html" class="project">
-      <img src="images/support.jpg" alt="Support informatique">
-      <h3>Support et Maintenance SI</h3>
-      <p>Diagnostic et résolution d'incidents informatiques.</p>
-    </a>
-
-    <!-- Projet 2 -->
-    <a href="stage.html" class="project">
-      <img src="images/stage.jpg" alt="Projet de stage">
-      <h3>Stage professionnel</h3>
-      <p>Projet réalisé durant mon stage en entreprise.</p>
-    </a>
-
-    <!-- Projet 3 -->
-    <a href="reseau.html" class="project">
-      <img src="images/reseau.jpg" alt="Infrastructure réseau">
-      <h3>Infrastructure réseau</h3>
-      <p>Conception et déploiement d'une infrastructure réseau virtualisée.</p>
-    </a>
-
-    <!-- Projet 4 -->
-    <a href="database.html" class="project">
-      <img src="images/database.jpg" alt="Base de données">
-      <h3>Base de données</h3>
-      <p>Conception et administration d'une base de données.</p>
-    </a>
-
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Me contacter</h2>
-  <div class="card">
-    <p><i class="fa-solid fa-envelope"></i> <strong>Email :</strong> kubotadiego@gmail.com</p>
-    <p><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank">diego-kubota</a></p>
-    <p><i class="fa-brands fa-github"></i> <strong>GitHub :</strong> <a href="https://github.com/diegoakb-web" target="_blank">diegoakb-web</a></p>
-  </div>
-</section>
-
-<footer>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:30px; padding:40px 10%; text-align:left;">
-    
-    <div>
-      <h3>Kubota Diego</h3>
-      <p style="color:#555;">Étudiant passionné en informatique et réseaux, spécialisé en solutions d'infrastructures systèmes et réseaux.</p>
-      <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank" style="color:black; margin-right:10px;">
-        <i class="fa-brands fa-linkedin"></i>
+  <!-- PROJETS -->
+  <section id="projets" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Projets</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <a href="reseau.html" class="project-card">
+        <div class="project-img"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="project-info">
+          <h3>Infrastructure réseau virtualisée</h3>
+          <p>Déploiement d'un serveur Windows Server avec AD, DNS et DHCP sous VMware.</p>
+          <span class="project-tag">VMware</span>
+          <span class="project-tag">Windows Server</span>
+          <span class="project-tag">Active Directory</span>
+        </div>
       </a>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kubotadiego@gmail.com" target="_blank" style="color:black;">
-        <i class="fa-solid fa-envelope"></i>
+      <a href="support.html" class="project-card">
+        <div class="project-img"><i class="fa-solid fa-headset"></i></div>
+        <div class="project-info">
+          <h3>Support et Maintenance SI</h3>
+          <p>Diagnostic et résolution d'incidents informatiques, assistance utilisateurs.</p>
+          <span class="project-tag">Support</span>
+          <span class="project-tag">Maintenance</span>
+        </div>
+      </a>
+      <a href="database.html" class="project-card">
+        <div class="project-img"><i class="fa-solid fa-database"></i></div>
+        <div class="project-info">
+          <h3>Base de données</h3>
+          <p>Administration d'une base MySQL/MariaDB — droits, sauvegardes, sécurité.</p>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">Administration</span>
+        </div>
+      </a>
+      <a href="stage.html" class="project-card">
+        <div class="project-img"><i class="fa-solid fa-building"></i></div>
+        <div class="project-info">
+          <h3>Stage professionnel</h3>
+          <p>Projet réalisé durant mon stage en entreprise.</p>
+          <span class="project-tag">Stage</span>
+          <span class="project-tag">SAM Networks</span>
+        </div>
       </a>
     </div>
+  </section>
 
-    <div>
-      <h3>Liens rapides</h3>
-      <ul style="list-style:none; padding:0;">
-        <li><a href="#home" style="color:black;">Accueil</a></li>
-        <li><a href="#about" style="color:black;">À propos</a></li>
-        <li><a href="#projets" style="color:black;">Projets</a></li>
-        <li><a href="e5.html" style="color:black;">E5</a></li>
-        <li><a href="e6.html" style="color:black;">E6</a></li>
-      </ul>
+  <!-- VEILLE -->
+  <section id="veille" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Veille technologique</h2>
+      <div class="section-line"></div>
     </div>
-
-    <div>
-      <h3>Contact</h3>
-      <ul style="list-style:none; padding:0;">
-        <li><i class="fa-solid fa-envelope"></i> kubotadiego@gmail.com</li>
-        <li><i class="fa-brands fa-linkedin"></i> diego-kubota</li>
-      </ul>
+    <div class="card-simple">
+      <p>Cette section sera complétée prochainement avec ma veille technologique sur un sujet en lien avec le domaine SISR.</p>
     </div>
+  </section>
 
-  </div>
-  <div style="text-align:center; padding:20px; border-top:1px solid #ddd;">
-    <p>© 2026 Kubota Diego. Tous droits réservés.</p>
-  </div>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:kubotadiego@gmail.com" class="contact-card">
+        <i class="fa-solid fa-envelope contact-icon"></i>
+        <h4>Email</h4>
+        <p>kubotadiego@gmail.com</p>
+      </a>
+      <a href="https://www.linkedin.com/in/diego-kubota-410b15350/" target="_blank" class="contact-card">
+        <i class="fa-brands fa-linkedin contact-icon"></i>
+        <h4>LinkedIn</h4>
+        <p>diego-kubota</p>
+      </a>
+      <a href="https://github.com/diegoakb-web" target="_blank" class="contact-card">
+        <i class="fa-brands fa-github contact-icon"></i>
+        <h4>GitHub</h4>
+        <p>diegoakb-web</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Bouton retour en haut -->
+<a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+    });
+    document.querySelector('.back-to-top').style.opacity = window.scrollY > 300 ? '1' : '0';
+  });
+</script>
+
 </body>
 </html>
