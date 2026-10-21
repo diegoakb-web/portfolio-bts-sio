@@ -11,8 +11,9 @@
     .page { max-width: 900px; }
     .page h3 { font-family:'Poppins',sans-serif; font-size:18px; font-weight:600; margin:40px 0 14px; color:#1A1A2E; }
     .page p { font-size:15px; color:#555; line-height:1.8; margin-bottom:12px; }
-    .page ul { padding-left:20px; margin-bottom:16px; }
+    .page ul, .page ol { padding-left:20px; margin-bottom:16px; }
     .page li { font-size:14px; color:#555; line-height:1.9; }
+    .page code { background:#f1f1f4; padding:2px 6px; border-radius:4px; font-size:13px; color:#1A1A2E; }
     .back-link { display:inline-flex; align-items:center; gap:8px; color:#888; text-decoration:none; font-size:14px; margin-bottom:32px; }
     .back-link:hover { color:#E94560; }
     .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
@@ -24,7 +25,7 @@
     .box h4 { font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; margin-bottom:8px; }
     .box h4 i { color:#E94560; margin-right:8px; }
     .box p { font-size:13px; margin-bottom:0; }
-    /* Organigramme */
+    .box.wide p { font-size:14px; margin-bottom:12px; }
     .org { display:flex; flex-direction:column; align-items:center; margin:24px 0; }
     .org-node { background:white; border:1px solid #eee; border-radius:12px; padding:16px 24px; text-align:center; min-width:200px; }
     .org-node strong { display:block; font-family:'Poppins',sans-serif; font-size:14px; }
@@ -37,10 +38,7 @@
     .org-row::before { content:''; position:absolute; top:0; left:25%; right:25%; height:2px; background:#ddd; }
     .org-row .org-node { position:relative; }
     .org-row .org-node::before { content:''; position:absolute; top:-24px; left:50%; width:2px; height:24px; background:#ddd; }
-    /* À compléter */
-    .todo { border:1.5px dashed #E94560; background:rgba(233,69,96,0.05); border-radius:8px; padding:10px 14px; font-size:13px; color:#c73652; margin-top:12px; }
-    .todo i { margin-right:6px; }
-    @media (max-width:700px) { .org-row::before { display:none; } .org-row .org-node::before { display:none; } }
+    @media (max-width:700px) { .org-row::before, .org-row .org-node::before { display:none; } }
   </style>
 </head>
 <body>
@@ -53,7 +51,8 @@
   <nav class="sidebar-nav">
     <a href="index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Accueil</a>
     <a href="index.html#about" class="nav-link"><i class="fa-solid fa-user"></i> À propos</a>
-    <a href="index.html#parcours" class="nav-link active"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="index.html#parcours" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+    <a href="stage.html" class="nav-link active"><i class="fa-solid fa-briefcase"></i> Stage</a>
     <a href="index.html#projets" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projets</a>
     <a href="veille.html" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i> Veille</a>
     <a href="e5.html" class="nav-link"><i class="fa-solid fa-file-shield"></i> E5</a>
@@ -75,8 +74,7 @@
         <h2 class="section-title">Stage — Sam Network Solutions</h2>
         <div class="section-line"></div>
       </div>
-      <p>Stage de 8 semaines réalisé à Paris dans le cadre de mon BTS SIO option SISR, au sein d'une petite entreprise de services et de vente informatique.</p>
-      <div class="todo"><i class="fa-solid fa-pen"></i>À compléter : dates exactes du stage (du ... au ...).</div>
+      <p>Stage de 8 semaines, du 20 juillet au 15 septembre, réalisé à Paris dans le cadre de mon BTS SIO option SISR, au sein d'une petite entreprise de services et de vente informatique.</p>
 
       <h3><i class="fa-solid fa-building" style="color:#E94560;margin-right:8px;"></i>Présentation de l'entreprise</h3>
       <div class="info-grid">
@@ -87,7 +85,7 @@
         <div class="info-item"><span>Adresse</span><strong>43 rue Froidevaux, 75014 Paris</strong></div>
         <div class="info-item"><span>Activité principale</span><strong>Commerce de détail d'ordinateurs, périphériques et logiciels (APE 47.41Z)</strong></div>
         <div class="info-item"><span>Taille</span><strong>PME, petite structure (3 personnes avec le stagiaire)</strong></div>
-        <div class="info-item"><span>TVA intracommunautaire</span><strong>FR25 937 604 106</strong></div>
+        <div class="info-item"><span>Période de stage</span><strong>Du 20 juillet au 15 septembre (8 semaines)</strong></div>
       </div>
 
       <h3><i class="fa-solid fa-users" style="color:#E94560;margin-right:8px;"></i>Clientèle et activités</h3>
@@ -107,11 +105,10 @@
         <div class="org-node top"><strong>Samuel Tesfahiwet</strong><span>Président-dirigeant</span></div>
         <div class="org-line"></div>
         <div class="org-row">
-          <div class="org-node"><strong>Technicien-vendeur</strong><span>Boutique : vente et réparation</span></div>
+          <div class="org-node"><strong>Cabrel</strong><span>Technicien-vendeur, boutique</span></div>
           <div class="org-node me"><strong>Stagiaire (moi)</strong><span>Mêmes missions, en boutique</span></div>
         </div>
       </div>
-      <div class="todo"><i class="fa-solid fa-pen"></i>À compléter : vérifier l'orthographe du nom avec lui, préciser s'il était ton tuteur de stage, et ajouter le prénom du technicien-vendeur seulement s'il est d'accord (sinon garde sa fonction).</div>
 
       <h3><i class="fa-solid fa-list-check" style="color:#E94560;margin-right:8px;"></i>Mes missions</h3>
       <p>J'ai occupé les mêmes fonctions que le technicien-vendeur de la boutique :</p>
@@ -122,7 +119,20 @@
         <li>Traitement des demandes d'installation de caméras reçues par téléphone ou par e-mail.</li>
         <li>Saisie et mise à jour des informations clients dans la base de données.</li>
       </ul>
-      <div class="todo"><i class="fa-solid fa-pen"></i>À compléter : un exemple précis par mission (type de panne diagnostiquée, matériel réparé, étapes d'une demande caméra, champs de la base de données). Ce sont ces exemples concrets que le jury va te demander.</div>
+
+      <h3><i class="fa-solid fa-screwdriver-wrench" style="color:#E94560;margin-right:8px;"></i>Exemple d'intervention : écran noir au démarrage</h3>
+      <div class="box wide">
+        <p><strong>Contexte :</strong> un client apporte en boutique un ordinateur ancien dont le bureau ne s'affiche plus : écran noir et pointeur de souris invisible.</p>
+        <p><strong>Hypothèse :</strong> fichiers système corrompus et pilotes obsolètes, notamment le pilote graphique, sur un matériel ancien.</p>
+        <p><strong>Démarche :</strong></p>
+        <ol>
+          <li>Ouverture d'une invite de commandes au clavier, la souris étant inutilisable.</li>
+          <li><code>sfc /scannow</code> : analyse des fichiers système protégés et remplacement de ceux qui sont corrompus.</li>
+          <li><code>DISM /Online /Cleanup-Image /RestoreHealth</code> : réparation de l'image système Windows via Windows Update.</li>
+          <li>Mise à jour des pilotes graphiques.</li>
+        </ol>
+        <p><strong>Compétences :</strong> diagnostic de panne, ligne de commande Windows, réparation du système, gestion des pilotes, relation client.</p>
+      </div>
 
       <h3><i class="fa-solid fa-scale-balanced" style="color:#E94560;margin-right:8px;"></i>CEJM : sécurité, droit et organisation</h3>
       <div class="two-cols">
@@ -143,11 +153,11 @@
           <p>Dans une structure de trois personnes, les rôles sont polyvalents : le technicien-vendeur et le stagiaire assurent vente et technique, et la direction gère les décisions et les clients à distance.</p>
         </div>
       </div>
-      <div class="todo"><i class="fa-solid fa-pen"></i>À compléter : pour chaque encadré, ajoute ce que tu as réellement observé (une mesure de sécurité vue en boutique, un document remis au client, une règle appliquée). Mes textes donnent le cadre, ce sont tes observations qui les rendent crédibles.</div>
 
       <h3><i class="fa-solid fa-graduation-cap" style="color:#E94560;margin-right:8px;"></i>Compétences développées</h3>
       <ul>
-        <li>Diagnostic et dépannage de matériel informatique.</li>
+        <li>Diagnostic et dépannage de matériel et de systèmes Windows.</li>
+        <li>Utilisation de la ligne de commande pour réparer un système.</li>
         <li>Relation client et gestion des demandes (téléphone, e-mail, boutique).</li>
         <li>Utilisation d'une base de données dans un contexte professionnel.</li>
         <li>Travail en petite équipe et autonomie.</li>
